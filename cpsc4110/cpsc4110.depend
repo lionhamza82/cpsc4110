@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1542174792 source:c:\users\hamza\documents\github\cpsc4110\cpsc4110\main.cpp
+	<iostream>
+	<complex>
+	<helper.h>
+
+1542174925 c:\users\hamza\documents\github\cpsc4110\cpsc4110\include\helper.h
+	<iostream>
+	<complex>
+
+1542175077 source:c:\users\hamza\documents\github\cpsc4110\cpsc4110\src\helper.cpp
+	<Helper.h>
+	<iostream>
+	<complex>
+
