@@ -84,3 +84,29 @@ complex<double>* Helper::multiplication(complex<double> matrix_1[3][3], complex<
 
     return *matrix;
 }
+
+complex<double>* Helper::addition(complex<double> matrix_1[3][3], complex<double> matrix_2[3][3])
+{
+    complex<double> matrix[3][3];
+
+    for(int i = 0; i < 3; i++)
+    {
+        for(int j = 0; j < 3; j++)
+        {
+            matrix[i][j] = computeSum(matrix_1[i][j], matrix_2[i][j]);
+        }
+    }
+
+    cout << matrix[0][0] << " ";
+    cout << matrix[0][1] << " ";
+    cout << matrix[0][2] << " " << endl;
+
+    cout << matrix[1][0] << " ";
+    cout << matrix[1][1] << " ";
+    cout << matrix[1][2] << " " << endl;
+
+    cout << matrix[2][0] << " ";
+    cout << matrix[2][1] << " ";
+    cout << matrix[2][2] << " " << endl;
+
+}

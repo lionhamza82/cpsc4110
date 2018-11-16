@@ -23,8 +23,8 @@ int main()
                     {cmplx_2, cmplx_2, cmplx_2}
                     };
 
-    h.multiplication(matrix_1, matrix_2);
-
+    //h.multiplication(matrix_1, matrix_2);
+    h.addition(matrix_1, matrix_2);
 
     //sum of two complex numbers
     complex<double> sum = h.computeSum(cmplx_1, cmplx_2);

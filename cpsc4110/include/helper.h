@@ -14,6 +14,7 @@ class Helper
         complex<double> computeProduct(complex<double>,complex<double>);
         complex<double> conjugate(complex<double>);
         complex<double>* multiplication(complex<double>[3][3], complex<double>[3][3]);
+        complex<double>* addition(complex<double>[3][3], complex<double>[3][3]);
         double length(complex<double>);
 
 
