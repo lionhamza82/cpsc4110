@@ -20,12 +20,12 @@ int main()
     cout << " 1) CNOT Gate" << endl;
     cout << " 2) Toffoli Gate" << endl;
     cout << " 3) Deutsch's Algorithm" << endl;
+    cout << endl;
 
     while (choice == 0){
       cout << "Select a option: ";
       cin >> choice;
-      cout << endl;
-
+      
       switch (choice){
         case 1: case 3:
           cout << " 0) |0> = 1" << endl;
