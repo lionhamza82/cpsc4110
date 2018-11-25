@@ -4,6 +4,8 @@
 	<complex>
 	<helper.h>
 
+1542328256 
+
 1542174925 c:\users\hamza\documents\github\cpsc4110\cpsc4110\include\helper.h
 	<iostream>
 	<complex>
@@ -22,5 +24,33 @@
 1542328256 c:\users\hamza\desktop\fall 2018\qc\cpsc4110\cpsc4110\include\helper.h
 	<iostream>
 	<complex>
+	<vector>
+
+1543116536 source:/home/hamm3615/Desktop/cpsc4110/cpsc4110/cpsc4110/main.cpp
+	<iostream>
+	<complex>
+	<helper.h>
+	<gates.h>
+	<vector>
+
+1543109634 /home/hamm3615/Desktop/cpsc4110/cpsc4110/cpsc4110/include/helper.h
+	<iostream>
+	<complex>
+	<vector>
+
+1543115958 source:/home/hamm3615/Desktop/cpsc4110/cpsc4110/cpsc4110/src/helper.cpp
+	<helper.h>
+	<iostream>
+	<complex>
+	<vector>
+
+1543117824 source:/home/hamm3615/Desktop/cpsc4110/cpsc4110/cpsc4110/src/gates.cpp
+	"gates.h"
+	<helper.h>
+	<iostream>
+	<complex>
+	<vector>
+
+1543117831 /home/hamm3615/Desktop/cpsc4110/cpsc4110/cpsc4110/include/gates.h
 	<vector>
 

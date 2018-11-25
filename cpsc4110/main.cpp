@@ -1,6 +1,7 @@
 #include <iostream>
 #include <complex>
 #include <helper.h>
+#include <gates.h>
 #include <vector>
 
 using namespace std;
@@ -24,7 +25,28 @@ int main()
                     };
 
     //h.multiplication(matrix_1, matrix_2);
-    h.addition(matrix_1, matrix_2);
+    //h.addition(matrix_1, matrix_2);
+    vector<vector<int>> matrix1 = {{1},{0}};
+    vector<vector<int>> matrix2 = {{1},{0}};
+    //vector<vector<int>> matrix3 = {{0},{1}};
+    vector<vector<int>> result;
+
+    //h.matrixMultiplication(matrix1, matrix2);
+
+    //result = h.tensorProduct(h.tensorProduct(matrix1, matrix2), matrix3);
+
+
+//    for(int x = 0; x < 8; x++)
+//    {
+//        cout << result.at(x).at(0) << endl;
+//    }
+//    cout << endl;
+
+    //h.matrixMultiplication(matrix1, matrix2);
+    Gates g;
+    //g.toffoliGate(matrix1, matrix2, matrix3);
+    g.deutschAlgorithm(matrix1, matrix2);
+
 
     //sum of two complex numbers
     complex<double> sum = h.computeSum(cmplx_1, cmplx_2);

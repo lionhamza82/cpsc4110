@@ -1,4 +1,4 @@
-#include <Helper.h>
+#include <helper.h>
 #include <iostream>
 #include <complex>
 #include <vector>
@@ -7,41 +7,18 @@ using namespace std;
 
 complex<double> Helper::computeSum(complex<double> cplx_num_1, complex<double> cplx_num_2)
 {
-    complex<double> sum(real(cplx_num_1 + cplx_num_2),
-                        imag(cplx_num_1 + cplx_num_2)
-                        );
-    return sum;
+    return cplx_num_1 + cplx_num_2;
 }
 
 complex<double> Helper::computeProduct(complex<double> cplx_num_1, complex<double> cplx_num_2)
 {
-    //formula:
-    // (a + bi) (c + di) = (a*c - b*d) + (a*d + b*c)
-
-    //a*c
-    double ac = real(cplx_num_1) * real(cplx_num_2);
-    //b*d
-    double bd = imag(cplx_num_1) * imag(cplx_num_2);
-    //real part = (a*c - b*d)
-    double real = ac - bd;
-
-    //a*d
-    double ad = std::real(cplx_num_1) * std::imag(cplx_num_2);
-    //b*c
-    double bc = std::imag(cplx_num_1) * std::real(cplx_num_2);
-    //complex part = (a*d + b*c)
-    double complex_part = ad + bc;
-
-    complex<double> product(real, complex_part);
-
-    return product;
+    return cplx_num_1 * cplx_num_2;
 }
 
 complex<double> Helper::conjugate(complex<double> cplx_num)
 {
     return conj(cplx_num);
 }
-
 
 double Helper::length(complex<double> cplx_num)
 {
@@ -108,5 +85,56 @@ complex<double>* Helper::addition(complex<double> matrix_1[3][3], complex<double
     cout << matrix[2][0] << " ";
     cout << matrix[2][1] << " ";
     cout << matrix[2][2] << " " << endl;
+
+    return NULL;
+
+}
+
+vector<vector<int>> Helper::tensorProduct(vector<vector<int>> ket_1, vector<vector<int>> ket_2)
+{
+    vector<vector<int>> result;
+    vector<int> temp;
+    int incrementer = 0;
+
+    for(int i = 0; i < ket_1.size(); i++)
+    {
+        for(int j = 0; j < ket_2.size(); j++)
+        {
+            temp.push_back(ket_1.at(i).at(0) * ket_2.at(j).at(0));
+            result.push_back(temp);
+            temp.clear();
+        }
+    }
+
+    return result;
+}
+
+vector<vector<int>> Helper::matrixMultiplication(vector<vector<int>> matrix1, vector<vector<int>> matrix2)
+{
+    vector<vector<int>> result;
+    int value = 0;
+    vector<int> temp;
+    int incrementer = 0;
+
+
+    for(int i = 0; i < matrix1.size(); i++)
+    {
+        for(int k = 0; k < matrix1.size(); k++)
+        {
+            value += matrix1.at(i).at(k) * matrix2.at(k).at(0);
+        }
+        temp.push_back(value);
+        result.push_back(temp);
+        temp.clear();
+        value = 0;
+    }
+
+
+    for(int x = 0; x < result.size(); x++)
+    {
+        cout << result.at(x).at(0) << endl;
+    }
+
+    return result;
 
 }
