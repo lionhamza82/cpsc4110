@@ -1,0 +1,56 @@
+# depslib dependency file v1.0
+1542174792 source:c:\users\hamza\documents\github\cpsc4110\cpsc4110\main.cpp
+	<iostream>
+	<complex>
+	<helper.h>
+
+1542328256 
+
+1542174925 c:\users\hamza\documents\github\cpsc4110\cpsc4110\include\helper.h
+	<iostream>
+	<complex>
+
+1542175077 source:c:\users\hamza\documents\github\cpsc4110\cpsc4110\src\helper.cpp
+	<Helper.h>
+	<iostream>
+	<complex>
+
+1542328567 source:c:\users\hamza\desktop\fall 2018\qc\cpsc4110\cpsc4110\main.cpp
+	<iostream>
+	<complex>
+	<helper.h>
+	<vector>
+
+1542328256 c:\users\hamza\desktop\fall 2018\qc\cpsc4110\cpsc4110\include\helper.h
+	<iostream>
+	<complex>
+	<vector>
+
+1543273425 source:/home/hamm3615/Desktop/cpsc4110/cpsc4110/cpsc4110/main.cpp
+	<iostream>
+	<complex>
+	<helper.h>
+	<gates.h>
+	<vector>
+
+1543268019 /home/hamm3615/Desktop/cpsc4110/cpsc4110/cpsc4110/include/helper.h
+	<iostream>
+	<complex>
+	<vector>
+
+1543268019 source:/home/hamm3615/Desktop/cpsc4110/cpsc4110/cpsc4110/src/helper.cpp
+	<helper.h>
+	<iostream>
+	<complex>
+	<vector>
+
+1543708224 source:/home/hamm3615/Desktop/cpsc4110/cpsc4110/cpsc4110/src/gates.cpp
+	"gates.h"
+	<helper.h>
+	<iostream>
+	<complex>
+	<vector>
+
+1543272899 /home/hamm3615/Desktop/cpsc4110/cpsc4110/cpsc4110/include/gates.h
+	<vector>
+
